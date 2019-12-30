@@ -1,0 +1,14 @@
+@import "~bulma/sass/utilities/_all";
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Quattrocento&display=swap');
+
+$mdi-font-path: '~@mdi/font/fonts/';
+@import '~@mdi/font/scss/materialdesignicons.scss';
+
+@import "variables";
+
+@import "~bulma/sass/utilities/initial-variables";
+@import "~bulma/sass/utilities/derived-variables";
+
+@import "~bulma/bulma.sass";
+@import "~buefy/src/scss/buefy";
