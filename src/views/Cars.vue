@@ -32,6 +32,13 @@
           <p>
             The SPECTER comes with a lifetime warranty.
           </p>
+
+          <button class="button is-black is-outlined is-inverted">
+            Visit Page
+          </button>
+          <button class="button is-white has-text-weight-bold">
+            Buy
+          </button>
         </div>
       </div>
     </section>
@@ -43,8 +50,14 @@
   top: auto;
 }
 
-.features {
-  max-width: 75% !important
+.button:not(:last-of-type):not(.is-fullwidth) {
+  margin-right: 0.5em;
+}
+
+@include until($desktop) {
+  .features {
+    max-width: 75%;
+  }
 }
 
 @include tablet {
