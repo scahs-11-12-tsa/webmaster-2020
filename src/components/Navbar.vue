@@ -19,7 +19,7 @@
         <b-navbar-item href="#">
             Impact
         </b-navbar-item>
-        <b-navbar-item class="logo force-center" href="/">
+        <b-navbar-item class="logo force-center" tag="router-link" :to="{ path: '/' }">
           <img
               src="@/assets/logo.svg"
               width="49" height="48"
@@ -52,53 +52,56 @@
 <style lang="scss">
 .navbar-start {
   flex-grow: 1;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
 }
 
 .navbar-item {
   color: $black;
+  font-weight: 300;
+  font-size: $size-3;
+
+  &.logo {
+    font-family: Quattrocento, serif;
+    font-weight: 400;
+    font-size: $size-2;
+
+    img {
+      margin-right: 0.25rem;
+    }
+  }
 }
 
 .navbar {
   max-height: $navbar-height;
 }
 
-.navbar-item.logo {
-  font-family: Quattrocento, serif;
-  font-size: $size-1;
-
-  img {
-    margin-right: 0.25rem;
+@include until($desktop) {
+  .navbar-start .logo {
+    display: none !important;
+  }
+  .force-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .navbar-end {
+    display: flex;
+    justify-content: center;
   }
 }
 
-@media screen and (max-width: $desktop - 1px){
-    .navbar-start .logo {
-      display: none;
-    }
-    .force-center {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-    .navbar-end {
-      display: flex;
-      justify-content: center;
-    }
-}
+@include desktop {
+  .navbar-brand {
+    display: none !important;
+  }
 
-@media screen and (min-width: $desktop){
-    .navbar-brand{
-      display: none;
-    }
-
-    .navbar-end {
-      position: absolute;
-      right: 0;
-      top: 50%;
-      transform: translateY(-50%);
-    }
+  .navbar-end {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
 </style>

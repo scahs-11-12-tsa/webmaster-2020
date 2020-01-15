@@ -1,155 +1,160 @@
 // Included below are all the defined variables from Bulma
-// Modify as needed, removing the !default attribute.
+// Modify as needed, removing the attribute.
 
 // Colors
 
-$black:        hsl(0, 0%, 4%) !default;
-$black-bis:    hsl(0, 0%, 7%) !default;
-$black-ter:    hsl(0, 0%, 14%) !default;
+$black:        hsl(0, 0%, 4%);
+$black-bis:    hsl(0, 0%, 7%);
+$black-ter:    hsl(0, 0%, 14%);
 
-$grey-darker:  hsl(0, 0%, 21%) !default;
-$grey-dark:    hsl(0, 0%, 29%) !default;
-$grey:         hsl(0, 0%, 48%) !default;
-$grey-light:   hsl(0, 0%, 71%) !default;
-$grey-lighter: hsl(0, 0%, 86%) !default;
+$grey-darker:  hsl(0, 0%, 21%);
+$grey-dark:    hsl(0, 0%, 29%);
+$grey:         hsl(0, 0%, 48%);
+$grey-light:   hsl(0, 0%, 71%);
+$grey-lighter: hsl(0, 0%, 86%);
 
-$white-ter:    hsl(0, 0%, 96%) !default;
-$white-bis:    hsl(0, 0%, 98%) !default;
-$white:        hsl(0, 0%, 100%) !default;
+$white-ter:    hsl(0, 0%, 96%);
+$white-bis:    hsl(0, 0%, 98%);
+$white:        hsl(0, 0%, 100%);
 
-$orange:       hsl(14,  100%, 53%) !default;
-$yellow:       hsl(48,  100%, 67%) !default;
-$green:        hsl(141, 71%,  48%) !default;
-$turquoise:    hsl(171, 100%, 41%) !default;
-$cyan:         hsl(204, 86%,  53%) !default;
-$blue:         hsl(217, 71%,  53%) !default;
-$purple:       hsl(271, 100%, 71%) !default;
-$red:          hsl(348, 100%, 61%) !default;
+$orange:       hsl(14,  100%, 53%);
+$yellow:       hsl(48,  100%, 67%);
+$green:        hsl(141, 71%,  48%);
+$turquoise:    hsl(171, 100%, 41%);
+$cyan:         hsl(204, 86%,  53%);
+$blue:         hsl(217, 71%,  53%);
+$purple:       hsl(271, 100%, 71%);
+$red:          hsl(348, 100%, 61%);
 
 // Typography
 
-$family-sans-serif: "Open Sans", BlinkMacSystemFontsans-serif !default;
-$family-monospace: monospace !default;
-$render-mode: optimizeLegibility !default;
+$family-sans-serif: "Open Sans", BlinkMacSystemFontsans-serif, sans-serif;
+$family-monospace: monospace;
+$render-mode: optimizeLegibility;
 
-$size-1: 3rem !default;
-$size-2: 2.5rem !default;
-$size-3: 2rem !default;
-$size-4: 1.5rem !default;
-$size-5: 1.25rem !default;
-$size-6: 1rem !default;
-$size-7: 0.75rem !default;
+$size-1: 5rem;
+$size-2: 3rem;
+$size-3: 2rem;
+$size-4: 1.5rem;
+$size-5: 1.25rem;
+$size-6: 1rem;
+$size-7: 0.75rem;
 
-$weight-light: 300 !default;
-$weight-normal: 400 !default;
-$weight-medium: 500 !default;
-$weight-semibold: 600 !default;
-$weight-bold: 700 !default;
+$weight-light: 300;
+$weight-normal: 400;
+$weight-medium: 500;
+$weight-semibold: 600;
+$weight-bold: 700;
+$weight-extra-bold: 800;
+
 
 // Responsiveness
 
 // The container horizontal gap, which acts as the offset for breakpoints
-$gap: 32px !default;
+$gap: 32px;
 // 960, 1152, and 1344 have been chosen because they are divisible by both 12 and 16
-$tablet: 769px !default;
+$tablet: 769px;
 // 960px container + 4rem
-$desktop: 960px + (2 * $gap) !default;
+$desktop: 960px + (2 * $gap);
 // 1152px container + 4rem
-$widescreen: 1152px + (2 * $gap) !default;
+$widescreen: 1152px + (2 * $gap);
 // 1344px container + 4rem;
-$fullhd: 1344px + (2 * $gap) !default;
+$fullhd: 1344px + (2 * $gap);
 
 // Miscellaneous
 
-$easing: ease-out !default;
-$radius-small: 2px !default;
-$radius: 3px !default;
-$radius-large: 5px !default;
-$radius-rounded: 290486px !default;
-$speed: 86ms !default;
+$easing: ease-out;
+$radius-small: 2px;
+$radius: 3px;
+$radius-large: 5px;
+$radius-rounded: 290486px;
+$speed: 86ms;
 
 // Flags
 
-$variable-columns: true !default;
+$variable-columns: true;
 
 
 // The default Bulma derived variables are declared below
 
-$primary: $turquoise !default;
+$primary: $turquoise;
 
-$info: $cyan !default;
-$success: $green !default;
-$warning: $yellow !default;
-$danger: $red !default;
+$info: $cyan;
+$success: $green;
+$warning: $yellow;
+$danger: $red;
 
-$light: $white-ter !default;
-$dark: $grey-darker !default;
+$light: $white-ter;
+$dark: $grey-darker;
 
 // Invert colors
 
-$orange-invert: findColorInvert($orange) !default;
-$yellow-invert: findColorInvert($yellow) !default;
-$green-invert: findColorInvert($green) !default;
-$turquoise-invert: findColorInvert($turquoise) !default;
-$cyan-invert: findColorInvert($cyan) !default;
-$blue-invert: findColorInvert($blue) !default;
-$purple-invert: findColorInvert($purple) !default;
-$red-invert: findColorInvert($red) !default;
+$orange-invert: findColorInvert($orange);
+$yellow-invert: findColorInvert($yellow);
+$green-invert: findColorInvert($green);
+$turquoise-invert: findColorInvert($turquoise);
+$cyan-invert: findColorInvert($cyan);
+$blue-invert: findColorInvert($blue);
+$purple-invert: findColorInvert($purple);
+$red-invert: findColorInvert($red);
 
-$primary-invert: $turquoise-invert !default;
-$info-invert: $cyan-invert !default;
-$success-invert: $green-invert !default;
-$warning-invert: $yellow-invert !default;
-$danger-invert: $red-invert !default;
-$light-invert: $dark !default;
-$dark-invert: $light !default;
+$primary-invert: $turquoise-invert;
+$info-invert: $cyan-invert;
+$success-invert: $green-invert;
+$warning-invert: $yellow-invert;
+$danger-invert: $red-invert;
+$light-invert: $dark;
+$dark-invert: $light;
 
 // General colors
 
-$background: $white-ter !default;
+$background: $white-ter;
 
-$border: $grey-lighter !default;
-$border-hover: $grey-light !default;
+$border: $grey-lighter;
+$border-hover: $grey-light;
 
 // Text colors
 
-$text: $grey-dark !default;
-$text-invert: findColorInvert($text) !default;
-$text-light: $grey !default;
-$text-strong: $grey-darker !default;
+$text: $black-bis;
+$text-invert: findColorInvert($text);
+$text-light: $grey-darker;
+$text-strong: $black;
 
 // Code colors
 
-$code: $red !default;
-$code-background: $background !default;
+$code: $red;
+$code-background: $background;
 
-$pre: $text !default;
-$pre-background: $background !default;
+$pre: $text;
+$pre-background: $background;
 
 // Link colors
 
-$link: $blue !default;
-$link-invert: $blue-invert !default;
-$link-visited: $purple !default;
+$link: $blue;
+$link-invert: $blue-invert;
+$link-visited: $purple;
 
-$link-hover: $grey-darker !default;
-$link-hover-border: $grey-light !default;
+$link-hover: $grey-darker;
+$link-hover-border: $grey-light;
 
-$link-focus: $grey-darker !default;
-$link-focus-border: $blue !default;
+$link-focus: $grey-darker;
+$link-focus-border: $blue;
 
-$link-active: $grey-darker !default;
-$link-active-border: $grey-dark !default;
+$link-active: $grey-darker;
+$link-active-border: $grey-dark;
 
 // Typography
 
-$family-primary: $family-sans-serif !default;
-$family-code: $family-monospace !default;
+$family-primary: $family-sans-serif;
+$family-code: $family-monospace;
 
-$size-small: $size-7 !default;
-$size-normal: $size-6 !default;
-$size-medium: $size-5 !default;
-$size-large: $size-4 !default;
+$size-small: $size-7;
+$size-normal: $size-6;
+$size-medium: $size-5;
+$size-large: $size-4;
 
-$navbar-height: 5rem !default;
-$navbar-item-img-max-height: 3rem !default
+$title-size: $size-2;
+$subtitle-size: $size-4;
+
+$navbar-height: 5rem;
+$navbar-item-img-max-height: 3rem
