@@ -1,4 +1,4 @@
-<template functional>
+<template>
   <b-navbar transparent class="is-size-3">
     <template slot="brand">
         <b-navbar-item class="logo force-center" href="/">
@@ -10,37 +10,37 @@
         </b-navbar-item>
     </template>
     <template slot="start">
-        <b-navbar-item tag="router-link" :to="{ path: '/about' }">
-            <span class="anim-under">About</span>
+        <b-navbar-item class="anim-under" tag="router-link" :to="{ path: '/about' }">
+            <span class="anim-text">About</span>
         </b-navbar-item>
-        <b-navbar-item tag="router-link" :to="{ path: '/cars' }">
-            <span class="anim-under">Cars</span>
+        <b-navbar-item class="anim-under" tag="router-link" :to="{ path: '/cars' }">
+            <span class="anim-text">Cars</span>
         </b-navbar-item>
-        <b-navbar-item href="#">
-            <span class="anim-under">Impact</span>
+        <b-navbar-item class="anim-under" href="#">
+            <span class="anim-text">Impact</span>
         </b-navbar-item>
-        <b-navbar-item class="logo force-center" tag="router-link" :to="{ path: '/' }">
+        <b-navbar-item class="anim-under logo force-center" tag="router-link" :to="{ path: '/' }">
           <img
               src="@/assets/logo.svg"
               width="49" height="48"
               alt="Raijin"
           >
-          raijin
+          <span class="anim-text">raijin</span>
         </b-navbar-item>
-        <b-navbar-item tag="router-link" :to="{ path: '/news' }">
-            <span class="anim-under">News</span>
+        <b-navbar-item class="anim-under" tag="router-link" :to="{ path: '/news' }">
+            <span class="anim-text">News</span>
         </b-navbar-item>
-        <b-navbar-item href="#">
-          <span class="anim-under">Shop</span>
+        <b-navbar-item class="anim-under" href="#">
+          <span class="anim-text">Shop</span>
         </b-navbar-item>
-        <b-navbar-item href="#">
-          <span class="anim-under">Contact</span>
+        <b-navbar-item class="anim-under" href="#">
+          <span class="anim-text">Contact</span>
         </b-navbar-item>
     </template>
 
     <template slot="end">
         <b-navbar-item tag="div">
-          <button class="button is-dark">
+          <button class="button is-black is-outlined">
               <b-icon icon="exit-to-app"></b-icon>
               <span>Chapter site</span>
           </button>
@@ -118,3 +118,9 @@
   }
 }
 </style>
+
+<script>
+export default {
+  name: 'Navbar'
+}
+</script>

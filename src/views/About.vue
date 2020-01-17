@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="section jesus has-background-black-bis has-text-white has-text-weight-light">
+    <section class="section jesus is-black has-text-weight-light">
       <div class="container">
         <div class="columns is-desktop">
           <div class="column is-two-thirds-desktop">
@@ -17,7 +17,7 @@
         </div>
       </div>
     </section>
-    <section class="section is-clipped has-background-white has-text-black has-text-weight-light">
+    <section class="section is-clipped is-white has-text-weight-light">
       <div class="container has-logo-jesus">
         <figure class="logo-jesus">
           <img

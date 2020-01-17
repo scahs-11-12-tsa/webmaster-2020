@@ -26,6 +26,8 @@ $blue:         hsl(217, 71%,  53%);
 $purple:       hsl(271, 100%, 71%);
 $red:          hsl(348, 100%, 61%);
 
+$custom-colors: ("black": ($black-bis, $white), "white": ($white, $black-bis));
+
 // Typography
 
 $family-sans-serif: "Open Sans", BlinkMacSystemFontsans-serif, sans-serif;
@@ -63,6 +65,7 @@ $widescreen: 912px + ($container-offset);
 $fullhd: 1104px + ($container-offset);
 
 // Miscellaneous
+$control-border-width: 2px;
 
 $easing: ease-out;
 $radius-small: 2px;

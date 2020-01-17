@@ -1,12 +1,12 @@
 <template>
   <div>
-    <div class="columns is-gapless has-text-white">
+    <div class="columns has-background-black-bis is-gapless has-text-white">
       <div class="column is-two-fifths">
         <figure class="image is-square">
           <img :src="thumb">
         </figure>
       </div>
-      <div class="column is-three-fifths has-background-black-bis has-text-left">
+      <div class="column is-three-fifths has-text-left">
         <div class="post-content is-size-7">
           <p class="post-blurb">{{ blurb }}</p>
           <div class="post-date is-italic">{{ date }}</div>

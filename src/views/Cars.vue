@@ -1,26 +1,9 @@
 <template>
   <div>
-    <section class="section">
-      <div class="container has-text-centered">
-        <h2 class="title has-text-weight-extra-bold">FEATURES</h2>
-        <h4 class="subtitle is-italic">Every Raijin car comes equipped with the following features.</h4>
-        <div class="columns is-mobile is-centered">
-          <div class="column features">
-            <div class="columns is-multiline is-mobile">
-              <div v-for="feature in features" :key="feature.title" class="column is-one-fifth-widescreen is-one-third-tablet is-half-mobile is-uppercase">
-                <figure class="image is-1by1 has-background-black-bis has-text-white">
-                  <span class="has-text-weight-bold is-overlay is-pulled-down">{{ feature.title }}</span>
-                </figure>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section has-background-black-bis has-text-white has-text-weight-light">
+    <section class="section is-black has-text-weight-light">
       <div class="container">
-        <h2 class="title has-text-white has-text-weight-light">Introducing the SPECTER.</h2>
-        <h3 class="title is-size-3 has-text-white has-text-weight-light">Affordability meets the electric car.</h3>
+        <h2 class="title has-text-weight-light">Introducing the SPECTER.</h2>
+        <h3 class="subtitle has-text-white is-size-3 has-text-weight-light">Affordability meets the electric car.</h3>
         <div class="specter-blurb content">
           <p>
             The Specter improves on all of the award winning features of previous Raijin cars, while incorporating customer feedback on various features. The Specter, Forbes Safest Car of 2020, boasts never-seen-before, innovative new features, like Raijin Auto-Dodge and Raijin Emergency Shielding,
@@ -41,6 +24,23 @@
         </div>
       </div>
     </section>
+    <section class="section is-white">
+      <div class="container has-text-centered">
+        <h2 class="title has-text-weight-extra-bold">FEATURES</h2>
+        <h4 class="subtitle is-italic">Every Raijin car comes equipped with the following features.</h4>
+        <div class="columns is-mobile is-centered">
+          <div class="column features">
+            <div class="columns is-multiline is-mobile">
+              <div v-for="feature in features" :key="feature.title" class="column is-one-fifth-widescreen is-one-third-tablet is-half-mobile is-uppercase">
+                <figure class="image is-1by1 has-background-black-bis has-text-white">
+                  <span class="has-text-weight-bold is-overlay is-pulled-down">{{ feature.title }}</span>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -55,7 +55,7 @@
 
 @include until($desktop) {
   .features {
-    max-width: 75%;
+    max-width: 90%;
   }
 }
 

@@ -2,6 +2,8 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 
+import '@/assets/scss/global.scss'
+
 import { Navbar as BNavbar, Icon } from 'buefy'
 
 import Banner from './components/Banner'
