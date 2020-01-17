@@ -58,7 +58,7 @@
 
     > .logo-jesus {
       position: absolute;
-      bottom: calc(30% - 3rem);
+      bottom: calc(50% - 3rem);
       left: calc(-30% - 3rem);
       opacity: 0.40;
       max-height: 50%;
