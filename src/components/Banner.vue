@@ -5,12 +5,9 @@
     </div>
     <div class="hero-body">
       <div class="container has-text-centered">
-        <p class="title is-size-1 has-text-white">
-          Cars
-        </p>
-        <p class="subtitle is-size-3 has-text-white">
-          Subtitle
-        </p>
+        <h1 class="title is-size-1 has-text-white">
+          {{ $route.name }}
+        </h1>
       </div>
     </div>
   </section>
@@ -20,5 +17,9 @@
 .banner {
   background: url("../assets/car.png") no-repeat center center;
   background-size: cover;
+}
+
+.banner .title {
+  text-transform: capitalize;
 }
 </style>
