@@ -1,6 +1,5 @@
 <template>
   <div>
-    <banner></banner>
     <section class="section jesus has-background-black-bis has-text-white has-text-weight-light">
       <div class="container">
         <div class="columns is-desktop">

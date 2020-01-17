@@ -1,6 +1,5 @@
 <template>
   <div>
-    <banner></banner>
     <section class="section">
       <div class="container has-text-centered">
         <h2 class="title has-text-weight-extra-bold">FEATURES</h2>
