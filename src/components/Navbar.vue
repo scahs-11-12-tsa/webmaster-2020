@@ -81,7 +81,7 @@
       margin-right: 0.25rem;
       transform: scale (-1, 1);
       transform-origin: center;
-      animation: spin 4s linear infinite;
+      animation: spin 12s linear infinite;
     }
   }
 }
