@@ -10,14 +10,14 @@
         </b-navbar-item>
     </template>
     <template slot="start">
-        <b-navbar-item href="#" class="anim-under">
-            About
+        <b-navbar-item tag="router-link" :to="{ path: '/about' }">
+            <span class="anim-under">About</span>
         </b-navbar-item>
-        <b-navbar-item tag="router-link" :to="{ path: '/cars' }" class="anim-under">
-            Cars
+        <b-navbar-item tag="router-link" :to="{ path: '/cars' }">
+            <span class="anim-under">Cars</span>
         </b-navbar-item>
-        <b-navbar-item href="#" class="anim-under">
-            Impact
+        <b-navbar-item href="#">
+            <span class="anim-under">Impact</span>
         </b-navbar-item>
         <b-navbar-item class="logo force-center" tag="router-link" :to="{ path: '/' }">
           <img
@@ -27,14 +27,14 @@
           >
           raijin
         </b-navbar-item>
-        <b-navbar-item href="#" class="anim-under">
-            News
+        <b-navbar-item tag="router-link" :to="{ path: '/news' }">
+            <span class="anim-under">News</span>
         </b-navbar-item>
-        <b-navbar-item href="#" class="anim-under">
-            Shop
+        <b-navbar-item href="#">
+          <span class="anim-under">Shop</span>
         </b-navbar-item>
-        <b-navbar-item href="#" class="anim-under">
-            Contact
+        <b-navbar-item href="#">
+          <span class="anim-under">Contact</span>
         </b-navbar-item>
     </template>
 
@@ -57,6 +57,16 @@
   text-align: center !important;
 }
 
+@keyframes spin {
+    0% {
+        transform: scale(-1, 1) rotate(360deg);
+    }
+
+    100% {
+        transform: scale(-1, 1) rotate(0deg);
+    }
+}
+
 .navbar-item {
   color: $black;
   font-weight: 300;
@@ -69,6 +79,9 @@
 
     img {
       margin-right: 0.25rem;
+      transform: scale (-1, 1);
+      transform-origin: center;
+      animation: spin 4s linear infinite;
     }
   }
 }

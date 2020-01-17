@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Banner></Banner>
+    <banner></banner>
     <section class="section">
       <div class="container has-text-centered">
         <h2 class="title has-text-weight-extra-bold">FEATURES</h2>
@@ -47,7 +47,7 @@
 
 <style lang="scss">
 .is-pulled-down {
-  top: auto;
+  top: auto !important;
 }
 
 .button:not(:last-of-type):not(.is-fullwidth) {
@@ -68,8 +68,6 @@
 </style>
 
 <script>
-import Banner from '@/components/Banner.vue'
-
 export default {
   data () {
     return {
@@ -91,7 +89,6 @@ export default {
         { title: 'Bluetooth ' }
       ]
     }
-  },
-  components: { Banner }
+  }
 }
 </script>

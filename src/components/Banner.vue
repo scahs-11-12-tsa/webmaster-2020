@@ -1,7 +1,7 @@
 <template>
   <section class="hero is-white is-medium banner">
     <div class="hero-head">
-      <Navbar></Navbar>
+      <navbar></navbar>
     </div>
     <div class="hero-body">
       <div class="container has-text-centered">
@@ -22,13 +22,3 @@
   background-size: cover;
 }
 </style>
-
-<script>
-import Navbar from './Navbar'
-
-export default {
-  components: {
-    Navbar
-  }
-}
-</script>

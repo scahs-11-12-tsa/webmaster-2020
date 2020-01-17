@@ -2,9 +2,18 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 
-import Buefy from 'buefy'
+import { Navbar as BNavbar, Icon } from 'buefy'
 
-Vue.use(Buefy)
+import Banner from './components/Banner'
+import Navbar from './components/Navbar'
+import Post from './components/Post'
+
+Vue.use(BNavbar)
+Vue.use(Icon)
+
+Vue.component('navbar', Navbar)
+Vue.component('banner', Banner)
+Vue.component('post', Post)
 
 Vue.config.productionTip = false
 
