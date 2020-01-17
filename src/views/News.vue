@@ -8,9 +8,9 @@
         <div class="columns is-centered">
           <div class="column is-narrow">
             <post
-              thumb="https://via.placeholder.com/180"
-              blurb="Hello"
-              date="date"
+              thumb="../assets/trees.jpg"
+              blurb="Raijin partners with Team Green to help plant 30 million trees. Thank you to all of those who donated to the cause."
+              date="January 18, 2020"
               class="post"
             ></post>
           </div>

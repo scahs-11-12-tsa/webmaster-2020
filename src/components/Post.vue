@@ -1,13 +1,13 @@
 <template>
   <div>
-    <div class="columns is-gapless has-text-white has-text-weight-light">
-      <div class="column is-half">
+    <div class="columns is-gapless has-text-white">
+      <div class="column is-two-fifths">
         <figure class="image is-square">
           <img :src="thumb">
         </figure>
       </div>
-      <div class="column is-half has-background-black-bis has-text-left">
-        <div class="post-content">
+      <div class="column is-three-fifths has-background-black-bis has-text-left">
+        <div class="post-content is-size-7">
           <p class="post-blurb">{{ blurb }}</p>
           <div class="post-date is-italic">{{ date }}</div>
         </div>
@@ -31,7 +31,7 @@
   }
 
   .columns {
-    width: 360px;
+    width: 420px;
     flex-grow: 0 !important;
   }
 </style>
