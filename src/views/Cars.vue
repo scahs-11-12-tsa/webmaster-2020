@@ -2,17 +2,17 @@
   <div>
     <section class="section is-black has-text-weight-light">
       <div class="container">
-        <h2 class="title has-text-weight-light">Introducing the SPECTER.</h2>
+        <h2 class="title has-text-weight-light">Introducing the TERA.</h2>
         <h3 class="subtitle has-text-white is-size-3 has-text-weight-light">Affordability meets the electric car.</h3>
-        <div class="specter-blurb content">
+        <div class="tera-blurb content">
           <p>
-            The Specter improves on all of the award winning features of previous Raijin cars, while incorporating customer feedback on various features. The Specter, Forbes Safest Car of 2020, boasts never-seen-before, innovative new features, like Raijin Auto-Dodge and Raijin Emergency Shielding,
+            The Tera improves on all of the award winning features of previous Raijin cars, while incorporating customer feedback on various features. The Tera, Forbes Safest Car of 2020, boasts never-seen-before, innovative new features, like Raijin Auto-Dodge and Raijin Emergency Shielding,
           </p>
           <p>
-            Not only does the Specter have the latest advances in electronic vehicle technology, but also has affordability that is unparalleled in the electric car market.
+            Not only does the Tera have the latest advances in electronic vehicle technology, but also has affordability that is unparalleled in the electric car market.
           </p>
           <p>
-            The SPECTER comes with a lifetime warranty.
+            The TERA comes with a lifetime warranty.
           </p>
 
           <button class="button is-black is-outlined is-inverted">
@@ -60,7 +60,7 @@
 }
 
 @include tablet {
-  .specter-blurb {
+  .tera-blurb {
     max-width: 60%;
   }
 }

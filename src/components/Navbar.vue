@@ -19,7 +19,7 @@
         <b-navbar-item class="anim-under" href="#">
             <span class="anim-text">Impact</span>
         </b-navbar-item>
-        <b-navbar-item class="anim-under logo force-center" tag="router-link" :to="{ path: '/' }">
+        <b-navbar-item class="logo force-center" tag="router-link" :to="{ path: '/' }">
           <img
               src="@/assets/logo.svg"
               width="49" height="48"
@@ -83,6 +83,28 @@
       transform-origin: center;
       animation: spin 12s linear infinite;
     }
+  }
+}
+
+.navbar.is-transparent a.navbar-item {
+  &:focus,
+  &:focus-within,
+  &:hover,
+  &.is-active {
+    background-color: transparent !important;
+    color: inherit !important;
+    outline: none;
+  }
+}
+
+.navbar.is-transparent .navbar-link {
+  &:focus,
+  &:focus-within,
+  &:hover,
+  &.is-active {
+    background-color: transparent !important;
+    color: inherit !important;
+    outline: none;
   }
 }
 
