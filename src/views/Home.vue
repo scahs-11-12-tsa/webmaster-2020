@@ -8,8 +8,6 @@
 
 <style lang="scss">
 #app.page--home {
-  padding-top: 0 !important;
-
   .navbar {
     background-color: transparent !important;
     filter: invert(100%);
@@ -19,7 +17,7 @@
 .home {
   height: 100vh;
   width: 100vw;
-
+  margin-top: -$navbar-height;
   overflow: hidden;
 }
 
