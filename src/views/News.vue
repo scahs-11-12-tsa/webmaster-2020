@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="section">
+    <section class="section is-white">
       <div class="container has-text-centered">
         <h2 class="title has-text-weight-extra-bold">News</h2>
         <h2 class="no-background title is-size-3 has-text-weight-extra-bold"><span>2020</span></h2>

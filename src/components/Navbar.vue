@@ -39,7 +39,7 @@
     </template>
 
     <template slot="end">
-        <b-navbar-item tag="div">
+        <b-navbar-item tag="a" href="https://scahs-11-12-tsa-2020-chapter.netlify.com/">
           <button class="button is-black is-outlined">
               <b-icon icon="exit-to-app"></b-icon>
               <span>Chapter site</span>
@@ -110,6 +110,9 @@
 
 .navbar {
   max-height: $navbar-height;
+
+  transition: 0.4s ease;
+  transition-property: filter;
 }
 
 @include until($desktop) {

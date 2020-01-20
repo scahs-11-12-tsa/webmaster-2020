@@ -3,6 +3,7 @@
 
 // Colors
 
+$black-absolute:        hsl(0, 0%, 0%);
 $black:        hsl(0, 0%, 4%);
 $black-bis:    hsl(0, 0%, 7%);
 $black-ter:    hsl(0, 0%, 14%);
@@ -26,7 +27,7 @@ $blue:         hsl(217, 71%,  53%);
 $purple:       hsl(271, 100%, 71%);
 $red:          hsl(348, 100%, 61%);
 
-$custom-colors: ("black": ($black-bis, $white), "white": ($white, $black-bis));
+$custom-colors: ("black": ($black-bis, $white), "white": ($white, $black-bis), "black-absolute": ($black-absolute, $white));
 
 // Typography
 
