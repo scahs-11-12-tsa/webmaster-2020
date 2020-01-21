@@ -1,7 +1,8 @@
 <template>
   <div class="home has-background-black-absolute">
     <video playsinline autoplay muted class="background-vid">
-      <source src="/assets/video.mp4" type="video/webm">
+      <source v-if="$mq == 'mobile' && portrait" src="/assets/mobile.mp4" type="video/mp4">
+      <source v-else src="/assets/video.mp4" type="video/mp4">
     </video>
   </div>
 </template>
@@ -21,17 +22,20 @@
   overflow: hidden;
 }
 
-@media screen and (orientation:landscape) {
-  .background-vid {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-  }
+.background-vid {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 </style>
 
 <script>
 export default {
-  name: 'home'
+  name: 'home',
+  computed: {
+    portrait () {
+      return window.innerHeight > window.innerWidth
+    }
+  }
 }
 </script>

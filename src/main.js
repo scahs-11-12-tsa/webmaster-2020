@@ -10,6 +10,16 @@ import Banner from './components/Banner'
 import Navbar from './components/Navbar'
 import Post from './components/Post'
 
+import VueMq from 'vue-mq'
+
+Vue.use(VueMq, {
+  breakpoints: { // default breakpoints - customize this
+    mobile: 600,
+    tablet: 1024,
+    desktop: Infinity
+  }
+})
+
 Vue.use(BNavbar)
 Vue.use(Icon)
 
