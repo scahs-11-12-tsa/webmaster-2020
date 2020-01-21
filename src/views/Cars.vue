@@ -32,9 +32,10 @@
           <div class="column features">
             <div class="columns is-multiline is-mobile">
               <div v-for="feature in features" :key="feature.title" class="column is-one-fifth-widescreen is-one-third-tablet is-half-mobile is-uppercase">
-                <figure class="image is-1by1 has-background-black-bis has-text-white">
-                  <span class="has-text-weight-bold is-overlay is-pulled-down">{{ feature.title }}</span>
-                </figure>
+                <div class="image is-1by1 has-background-black-bis has-text-white">
+                  <SVGIcon :name="feature.icon"></SVGIcon>
+                  <span class="icon-text has-text-weight-bold is-overlay is-pulled-down">{{ feature.title }}</span>
+                </div>
               </div>
             </div>
           </div>
@@ -64,30 +65,65 @@
     max-width: 60%;
   }
 }
+
+.image .icon {
+  fill: white;
+  display: block;
+
+  width: 60%;
+  height: auto;
+
+  margin: 1em auto auto auto;
+
+  @extend %overlay;
+}
+
+.icon-text {
+  height: 30%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.icon--suspension {
+  transform: scale(1.2, 1.2);
+}
+
+@include mobile {
+  .icon-text {
+    font-size: $size-7;
+  }
+}
 </style>
 
 <script>
+import SVGIcon from '@/components/SVGIcon'
+
 export default {
   data () {
     return {
       features: [
-        { title: 'Autopilot' },
-        { title: 'Blind Spot Alert' },
-        { title: 'Heated Wheel and Seats' },
-        { title: 'Massaging Seats ' },
-        { title: 'Multizone Climate System ' },
-        { title: 'Auto-Dimming Mirrors' },
-        { title: 'Rear Entertainment System' },
-        { title: 'Wifi Hotspot' },
-        { title: 'USB Charging ' },
-        { title: 'Keyless Entry ' },
-        { title: 'Smart Suspension' },
-        { title: 'Track Pace' },
-        { title: 'Home Assist Device Connectivity' },
-        { title: 'High-End Stereos ' },
-        { title: 'Bluetooth ' }
+        { title: 'Autopilot', icon: 'car-connected' },
+        { title: 'Blind Spot Alert', icon: 'eye' },
+        { title: 'Heated Wheel and Seats', icon: 'car-seat-heater' },
+        { title: 'Massaging Seats', icon: 'car-seat' },
+        { title: 'Multizone Climate System', icon: 'cloud' },
+        { title: 'Auto-Dimming Mirrors', icon: 'car-windshield' },
+        { title: 'Rear Entertainment System', icon: 'television' },
+        { title: 'Wifi Hotspot', icon: 'wifi' },
+        { title: 'USB Charging', icon: 'usb-port' },
+        { title: 'Keyless Entry', icon: 'lock-open' },
+        { title: 'Smart Suspension', icon: 'suspension' },
+        { title: 'Track Pace', icon: 'car-cruise-control' },
+        { title: 'Home Assist Device Connectivity', icon: 'home' },
+        { title: 'High-End Stereos', icon: 'speaker' },
+        { title: 'Bluetooth', icon: 'bluetooth' }
       ]
     }
+  },
+  components: {
+    SVGIcon
   }
 }
 </script>
