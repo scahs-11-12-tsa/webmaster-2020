@@ -16,9 +16,6 @@
         <b-navbar-item class="anim-under" tag="router-link" :to="{ path: '/cars' }">
             <span class="anim-text">Cars</span>
         </b-navbar-item>
-        <b-navbar-item class="anim-under" href="#">
-            <span class="anim-text">Impact</span>
-        </b-navbar-item>
         <b-navbar-item class="logo force-center" tag="router-link" :to="{ path: '/' }">
           <img
               src="@/assets/logo.svg"
@@ -30,16 +27,7 @@
         <b-navbar-item class="anim-under" tag="router-link" :to="{ path: '/news' }">
             <span class="anim-text">News</span>
         </b-navbar-item>
-        <b-navbar-item class="anim-under" href="#">
-          <span class="anim-text">Shop</span>
-        </b-navbar-item>
-        <b-navbar-item class="anim-under" href="#">
-          <span class="anim-text">Contact</span>
-        </b-navbar-item>
-    </template>
-
-    <template slot="end">
-        <b-navbar-item tag="a" href="https://scahs-11-12-tsa-2020-chapter.netlify.com/">
+        <b-navbar-item tag="a" class="last" href="https://scahs-11-12-tsa-2020-chapter.netlify.com/">
           <button class="button is-black is-outlined">
               <b-icon icon="exit-to-app"></b-icon>
               <span>Chapter site</span>
@@ -115,7 +103,7 @@
   transition-property: filter;
 }
 
-@include until($desktop) {
+@include touch {
   .navbar-start .logo {
     display: none !important;
   }
@@ -140,6 +128,10 @@
     right: 0;
     top: 50%;
     transform: translateY(-50%);
+  }
+
+  .last {
+    padding-bottom: 0.1rem !important;
   }
 }
 </style>
