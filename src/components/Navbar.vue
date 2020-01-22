@@ -27,11 +27,8 @@
         <b-navbar-item class="anim-under" tag="router-link" :to="{ path: '/news' }">
             <span class="anim-text">News</span>
         </b-navbar-item>
-        <b-navbar-item tag="a" class="last" href="https://scahs-11-12-tsa-2020-chapter.netlify.com/">
-          <button class="button is-black is-outlined">
-              <b-icon icon="exit-to-app"></b-icon>
-              <span>Chapter site</span>
-          </button>
+        <b-navbar-item class="anim-under last" tag="a" href="https://scahs-11-12-tsa-2020-chapter.netlify.com/">
+          <span class="anim-text">Chapter</span><b-icon icon="exit-to-app"></b-icon>
         </b-navbar-item>
     </template>
   </b-navbar>
@@ -129,10 +126,10 @@
     top: 50%;
     transform: translateY(-50%);
   }
+}
 
-  .last {
-    padding-bottom: 0.1rem !important;
-  }
+.last .icon {
+  margin-left: 0.2em;
 }
 </style>
 
