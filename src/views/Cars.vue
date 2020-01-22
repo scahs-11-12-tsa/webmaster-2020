@@ -1,7 +1,7 @@
 <template>
   <div>
-    <section class="section is-black has-text-weight-light">
-      <div class="container">
+    <section class="section tera-section is-black has-text-weight-light">
+      <div class="tera-container container">
         <h2 class="title has-text-weight-light">Introducing the TERA.</h2>
         <h3 class="subtitle has-text-white is-size-3 has-text-weight-light">Affordability meets the electric car.</h3>
         <div class="tera-blurb content">
@@ -9,11 +9,13 @@
             The Tera improves on all of the award winning features of previous Raijin cars, while incorporating customer feedback on various features. The Tera, Forbes Safest Car of 2020, boasts never-seen-before, innovative new features, like Raijin Auto-Dodge and Raijin Emergency Shielding,
           </p>
           <p>
-            Not only does the Tera have the latest advances in electronic vehicle technology, but also has affordability that is unparalleled in the electric car market.
+            Not only does the Tera have the latest advances in electronic vehicle technology, but also unparalleled affordability in the electric car market.
           </p>
           <p>
             The TERA comes with a lifetime warranty.
           </p>
+
+          <img v-if="$mq == 'mobile'" src="~@/assets/Render(1).png" />
 
           <button class="button is-black is-outlined is-inverted">
             Visit Page
@@ -76,6 +78,29 @@
   margin: 1em auto auto auto;
 
   @extend %overlay;
+}
+
+@include tablet {
+  .tera-container {
+    background-image: url("~@/assets/Render(1).png");
+    background-position: bottom right;
+    background-size: 60% auto;
+    background-repeat: no-repeat;
+  }
+}
+
+@include widescreen {
+  .tera-container {
+    background: none;
+  }
+
+  .tera-section {
+    background-image: url("~@/assets/Render(1).png");
+    background-position: bottom 0.25em right $gap;
+    background-size: 40% auto;
+    background-repeat: no-repeat;
+    padding-bottom: 4rem !important;
+  }
 }
 
 .icon-text {
