@@ -35,7 +35,7 @@
             <h2 class="title is-size-1-desktop is-size-2-touch has-text-weight-extra-bold">OUR STORY</h2>
             <div class="is-size-4-desktop has-text-justified">
               <p>
- Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rutrum rhoncus feugiat. Ut suscipit feugiat lectus quis commodo. Ut a lectus finibus, varius nisl non, ullamcorper diam. Morbi convallis eros ante, non pulvinar felis condimentum vitae. Phasellus sed diam non quam ullamcorper posuere sed ac magna. Nam interdum, orci a pulvinar vestibulum, ligula dui eleifend nisi, ut feugiat ligula purus vitae nisl. Praesent eu sagittis massa. Ut nec lectus nec risus lobortis dignissim eu non tortor. Quisque libero augue, maximus sed nulla sit amet, bibendum malesuada nulla. Pellentesque mi libero, eleifend blandit neque in, hendrerit tincidunt mauris.
+In 2002, Bartholomew Rains founded Raijin with his vision for the future of automobiles, of transportation, of energy, and of the world. Starting with a ragtag group of talented engineers, Raijin began work on its revolutionary battery and motor technology in 2004. The first working prototype, the Raijin P1, hit the roads by 2008 to enormous positive reception from industry and researchers alike. Since then, Raijin has developed three consumer models, becoming the major player in creating afforable electric vehicles, but we've always stayed true to our original vision of pushing the boundaries of technology.
               </p>
             </div>
           </div>
